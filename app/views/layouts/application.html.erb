@@ -5,10 +5,10 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all',
-        'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application',
-        'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+
   </head>
 
   <body>
@@ -61,7 +61,7 @@
             <a class="text-muted" href="#">
               <svg xmlns="search.png" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
             </a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Member</a>
+            <%= link_to "Member", home_path, class: "btn btn-sm btn-outline-secondary" %>
           </div>
         </div>
       </header>
@@ -76,11 +76,10 @@
 
     <hr><hr><br>
     <%= yield %>
-    <br><br><br><hr><hr><br>
-      <footer class="footer">
-          <div class="container">
-          <span class="text-muted">&copy; TheQuartz 2016-2018</span>
-        </div>
+    <br><br><br><hr><hr>
+      <footer class="container-fluid bg-light text-center">
+        <p><div class="footer-text text-muted"><br>&copy;Quartz Web | <a href="/">localhost</a></div></a></p><br><br>
+      </footer>
         </footer>
   </body>
 </html>

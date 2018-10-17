@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+
+.bg-silver{
+  color: #9b9fa2;
+}
